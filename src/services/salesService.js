@@ -2,17 +2,17 @@ import api from './api'
 
 export default {
   getSales() {
-    return api.get('/sales')
+    return api.get('/api/sales')
   },
 
   createSale(data) {
-    return api.post('/sales', data)
+    return api.post('/api/sales', data)
   },
   updateSale(id, data) {
-    return api.put(`/sales/${id}`, data)
+    return api.put(`/api/sales/${id}`, data)
   },
 
   deleteSale(id) {
-    return api.delete(`/sales/${id}`)
-}
+    return api.delete(`/api/sales/${id}`)
+  },
 }

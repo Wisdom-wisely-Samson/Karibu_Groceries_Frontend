@@ -14,7 +14,7 @@ export const useDashboardStore = defineStore('dashboard', {
   actions: {
     async fetchDashboard() {
       try {
-        const res = await api.get('/dashboard')
+        const res = await api.get('/api/dashboard')
         this.totalSales = res.data.totalSales
         this.totalCredit = res.data.totalCredit
         this.totalCost = res.data.totalCost

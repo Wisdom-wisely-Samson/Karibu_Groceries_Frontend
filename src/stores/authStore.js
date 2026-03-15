@@ -17,7 +17,7 @@ export const useAuthStore = defineStore('auth', {
 
   actions: {
     async login(credentials) {
-      const res = await axios.post(`${import.meta.env.VITE_API_URL}/auth/login`, credentials)
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/auth/login`, credentials)
 
       const data = res.data
       this.user = data.user
