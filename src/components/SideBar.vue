@@ -65,8 +65,8 @@ function isActive(path) {
       <!-- Logo -->
       <div class="logo">
         Karibu Groceries
-        <img src="../assets/images/Karibu_logo.png" alt="Company Logo" />
-        <h6>Logged in as: {{ authStore.user.username }} </h6>
+        <img src="../assets/images/Karibu_Logo.png" alt="Company Logo" />
+        <h6>Logged in as: {{ authStore.user.username }}</h6>
         <h6>Role: {{ authStore.role }}</h6>
       </div>
 
@@ -82,9 +82,8 @@ function isActive(path) {
           <component :is="item.icon" class="menu-button" />
           {{ item.name }}
         </button>
-        
       </div>
-     
+
       <!-- Logout -->
       <div class="button-container">
         <button @click="logout" class="logout-button">Logout</button>
@@ -94,14 +93,12 @@ function isActive(path) {
       <header class="topbar">
         <h1>Karibu Groceries Management System ({{ authStore.user.branch }} Branch)</h1>
       </header>
-      
 
       <router-view />
       <footer class="footer">
         <p>&copy; 2026 Karibu Groceries. All rights reserved.</p>
       </footer>
     </main>
-    
   </div>
 </template>
 <style scoped>
